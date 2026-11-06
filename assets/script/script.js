@@ -1,3 +1,4 @@
+
 /* Elementi del tema */
 
 const btnTema = document.querySelector("#btnTema");
@@ -14,14 +15,6 @@ const messaggioConferma = document.querySelector("#messaggioConferma");
 
 /* Cambio tema */
 
-const temaSalvato = localStorage.getItem("tema");
-
-if (temaSalvato === "scuro") {
-    document.body.classList.add("tema-scuro");
-    iconaTema.classList.replace("fa-moon", "fa-sun");
-    btnTema.setAttribute("aria-label", "Attiva tema chiaro");
-}
-
 btnTema.addEventListener("click", function () {
 
     document.body.classList.toggle("tema-scuro");
@@ -31,14 +24,10 @@ btnTema.addEventListener("click", function () {
         iconaTema.classList.replace("fa-moon", "fa-sun");
         btnTema.setAttribute("aria-label", "Attiva tema chiaro");
 
-        localStorage.setItem("tema", "scuro");
-
     } else {
 
         iconaTema.classList.replace("fa-sun", "fa-moon");
         btnTema.setAttribute("aria-label", "Attiva tema scuro");
-
-        localStorage.setItem("tema", "chiaro");
     }
 
 });

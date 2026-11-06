@@ -380,8 +380,6 @@ nav a:hover {
 .footerCopyright {
     width: 100%;
     margin: 0;
-    padding-top: 15px;
-    border-top: 1px solid hsla(0, 0%, 100%, 0.2);
     font-size: 14px;
 }
 
@@ -644,18 +642,31 @@ textarea:focus-visible {
 
     #site-footer {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         align-items: center;
         text-align: left;
+    }
+
+    .footerBrand,
+    .footerSocial,
+    .footerCopyright {
+        flex: 1;
     }
 
     .footerBrand {
         align-items: flex-start;
     }
 
+    .footerSocial {
+        justify-content: center;
+    }
+
     .footerCopyright {
-        text-align: center;
+        width: auto;
+        padding: 0;
+        border: none;
+        text-align: right;
     }
 }
 
