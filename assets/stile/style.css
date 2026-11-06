@@ -1,0 +1,691 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Impostazioni generali */
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #fafafa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+/* Header */
+
+#site-header {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.titolo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.titolo h1 {
+    margin: 0;
+    color: hsl(150, 60%, 30%);
+    font-size: 28px;
+}
+
+.icona {
+    color: hsl(150, 60%, 30%);
+    font-size: 25px;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: hsl(150, 60%, 95%);
+}
+
+/* Pulsante tema */
+
+#btnTema {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: hsl(150, 60%, 30%);
+    border: 1px solid hsla(150, 60%, 30%, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btnTema:hover {
+    background-color: hsl(150, 60%, 95%);
+    transform: scale(1.05);
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    min-height: 400px;
+    padding: 40px 20px;
+
+    background-color: hsl(150, 60%, 30%);
+    color: #ffffff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.titoliHero {
+    max-width: 650px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.pHero {
+    max-width: 550px;
+    margin: 0;
+    font-size: 17px;
+}
+
+.btnHero {
+    margin-top: 8px;
+    padding: 11px 22px;
+
+    background-color: #ffffff;
+    color: hsl(150, 60%, 30%);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btnHero:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Titoli delle sezioni */
+
+.titoliMain {
+    width: 100%;
+    margin: 0 0 22px;
+    color: hsl(150, 60%, 30%);
+    text-align: center;
+    font-size: 26px;
+}
+
+/* Lavori */
+
+.lavori {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.cardLavori {
+    width: 85%;
+    padding: 8px;
+
+    background-color: #ffffff;
+    border: 1px solid hsla(150, 60%, 30%, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardLavori img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cardLavori:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Servizi e team */
+
+.servizi,
+.team {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ContenitoreCard,
+.ContenitoreTeam {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.cardServizi,
+.cardTeam {
+    width: 100%;
+    padding: 25px 20px;
+
+    background-color: #ffffff;
+    border: 1px solid hsla(150, 60%, 30%, 0.2);
+    border-radius: 10px;
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardServizi:hover,
+.cardTeam:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Card servizi */
+
+.cardServizi i {
+    margin-bottom: 12px;
+    color: hsl(150, 60%, 30%);
+    font-size: 30px;
+}
+
+.cardServizi h4 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-size: 19px;
+}
+
+.cardServizi p {
+    margin-bottom: 0;
+    color: #1a1a1a;
+}
+
+/* Card team */
+
+.iniziali {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px;
+
+    background-color: hsl(150, 60%, 30%);
+    color: #ffffff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cardTeam h4 {
+    margin-bottom: 4px;
+    color: #1a1a1a;
+    font-size: 19px;
+}
+
+.cardTeam .ruolo {
+    margin-bottom: 12px;
+    color: hsl(150, 60%, 30%);
+    font-weight: bold;
+}
+
+.cardTeam p:last-child {
+    margin-bottom: 0;
+    color: #1a1a1a;
+}
+
+/* Footer */
+
+#site-footer {
+    width: 100%;
+    padding: 35px 20px 15px;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+}
+
+.footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: hsl(150, 60%, 30%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footerBrand p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footerSocial span {
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid hsla(0, 0%, 100%, 0.4);
+    border-radius: 50%;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerCopyright {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+    font-size: 14px;
+}
+
+/* Modale */
+
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.modale[hidden] {
+    display: none;
+}
+
+.contenutoModale {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    padding: 35px 25px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.contenutoModale h2 {
+    margin-bottom: 10px;
+    color: hsl(150, 60%, 30%);
+}
+
+.contenutoModale>p {
+    margin-bottom: 20px;
+}
+
+.chiudiModale {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: transparent;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+.chiudiModale:hover {
+    background-color: #eee;
+}
+
+#formPreventivo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#formPreventivo input,
+#formPreventivo textarea {
+    width: 100%;
+    padding: 12px;
+
+    font: inherit;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#formPreventivo textarea {
+    resize: vertical;
+}
+
+.btnInvio {
+    padding: 12px;
+
+    background-color: hsl(150, 60%, 30%);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btnInvio:hover {
+    background-color: hsl(150, 60%, 25%);
+}
+
+.messaggioConferma {
+    margin: 15px 0 0;
+    color: hsl(150, 60%, 30%);
+    font-weight: bold;
+}
+
+/* Tema scuro */
+
+body.tema-scuro {
+    color: #f0f0f0;
+    background-color: #121212;
+}
+
+.tema-scuro #site-header {
+    background-color: #121212;
+    border-bottom-color: #1f1f1f;
+}
+
+.tema-scuro nav a:hover {
+    background-color: #1f1f1f;
+}
+
+.tema-scuro #btnTema {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    border-color: hsla(150, 60%, 30%, 0.5);
+}
+
+.tema-scuro #btnTema:hover {
+    background-color: hsl(150, 60%, 30%);
+}
+
+.tema-scuro .cardLavori,
+.tema-scuro .cardServizi,
+.tema-scuro .cardTeam {
+    background-color: #1f1f1f;
+    border-color: hsla(150, 60%, 30%, 0.3);
+}
+
+.tema-scuro .cardServizi h4,
+.tema-scuro .cardServizi p,
+.tema-scuro .cardTeam h4,
+.tema-scuro .cardTeam p {
+    color: #f0f0f0;
+}
+
+.tema-scuro .cardTeam .ruolo {
+    color: hsl(150, 60%, 30%);
+}
+
+.tema-scuro .contenutoModale {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+.tema-scuro .chiudiModale {
+    color: #f0f0f0;
+}
+
+.tema-scuro .chiudiModale:hover {
+    background-color: #333333;
+}
+
+.tema-scuro #formPreventivo input,
+.tema-scuro #formPreventivo textarea {
+    background-color: #121212;
+    color: #f0f0f0;
+    border-color: #444444;
+}
+
+/* Accessibilità */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid hsl(150, 60%, 30%);
+    outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    /* Header */
+
+    #site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 5px;
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 430px;
+        padding: 50px 40px;
+    }
+
+    .titoliHero {
+        font-size: 40px;
+    }
+
+    /* Lavori */
+
+    .cardLavori {
+        width: calc(50% - 12px);
+    }
+
+    /* Servizi */
+
+    .ContenitoreCard {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .cardServizi {
+        width: calc(50% - 8px);
+    }
+
+    /* Team */
+
+    .ContenitoreTeam {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .cardTeam {
+        width: calc(50% - 8px);
+    }
+
+    .servizi,
+    .team {
+        padding: 50px 30px;
+    }
+
+    /* Footer */
+
+    #site-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footerBrand {
+        align-items: flex-start;
+    }
+
+    .footerCopyright {
+        text-align: center;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+    /* Lavori */
+
+    .cardLavori {
+        width: calc(33.333% - 13px);
+    }
+
+    /* Servizi */
+
+    .cardServizi {
+        width: calc(33.333% - 11px);
+    }
+
+    /* Team */
+
+    .cardTeam {
+        width: calc(33.333% - 11px);
+    }
+
+    .titoliMain {
+        font-size: 30px;
+    }
+
+    #site-footer {
+        padding: 40px 60px 18px;
+    }
+}

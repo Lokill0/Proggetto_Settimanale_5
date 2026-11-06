@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom — Studio di design</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/stile/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header id="site-header">
+
+        <div class="titolo">
+            <i class="fa-solid fa-seedling icona"></i>
+            <h1>Bloom</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#lavori">Lavori</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+                <li>
+                    <button class="btn" id="btnTema" type="button" aria-label="Attiva tema scuro">
+                        <i class="fa-solid fa-moon" id="iconaTema"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <h2 class="titoliHero">Trasformiamo idee in design</h2>
+
+            <p class="pHero">
+                Siamo uno Studio creativo. Identità visiva, web e motion graphic
+                per chi vuole farsi notare.
+            </p>
+
+            <button class="btnHero" id="btnPreventivo" type="button">
+                Richiedi preventivo
+            </button>
+
+        </section>
+
+        <!-- Lavori -->
+
+        <section class="lavori" id="lavori">
+
+            <h3 class="titoliMain">I nostri lavori</h3>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+            <article class="cardLavori">
+                <img src="assets/img/segnaPosto.jpg" alt="Progetto grafico dello studio Bloom">
+            </article>
+
+        </section>
+
+        <!-- Servizi -->
+
+        <section class="servizi" id="servizi">
+
+            <h3 class="titoliMain">I nostri servizi</h3>
+
+            <div class="ContenitoreCard">
+
+                <article class="cardServizi">
+                    <i class="fa-solid fa-pen-nib icona"></i>
+                    <h4>Identità visiva</h4>
+                    <p>
+                        Logo, palette, tipografia e linee guida
+                        per un brand coerente, riconoscibile e duraturo.
+                    </p>
+                </article>
+
+                <article class="cardServizi">
+                    <i class="fa-solid fa-desktop icona"></i>
+                    <h4>Web design</h4>
+                    <p>
+                        Siti vetrina e landing page responsive,
+                        accessibili e ottimizzate per dispositivi mobili.
+                    </p>
+                </article>
+
+                <article class="cardServizi">
+                    <i class="fa-solid fa-film icona"></i>
+                    <h4>Motion graphic</h4>
+                    <p>
+                        Animazioni e brevi video per raccontare il
+                        prodotto, i social e le campagne pubblicitarie.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Team -->
+
+        <section class="team" id="team">
+
+            <h3 class="titoliMain">Il nostro team</h3>
+
+            <div class="ContenitoreTeam">
+
+                <article class="cardTeam">
+                    <p class="iniziali">GR</p>
+                    <h4>Giulia Rossi</h4>
+                    <p class="ruolo">Art director</p>
+                    <p>
+                        Cura l’identità visiva dei progetti,
+                        dal concept alla consegna finale.
+                    </p>
+                </article>
+
+                <article class="cardTeam">
+                    <p class="iniziali">MB</p>
+                    <h4>Marco Bianchi</h4>
+                    <p class="ruolo">Web designer</p>
+                    <p>
+                        Progetta interfacce responsive e accessibili,
+                        con un occhio al codice.
+                    </p>
+                </article>
+
+                <article class="cardTeam">
+                    <p class="iniziali">SB</p>
+                    <h4>Sara Verdi</h4>
+                    <p class="ruolo">Motion designer</p>
+                    <p>
+                        Dà movimento ai brand con animazioni,
+                        video brevi e contenuti social.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="site-footer">
+
+        <div class="footerBrand">
+            <div class="footerLogo">
+                <i class="fa-solid fa-seedling"></i>
+                <span>Bloom</span>
+            </div>
+
+            <p>Studio di design fondato nel 2026.</p>
+        </div>
+
+        <div class="footerSocial">
+            <span aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </span>
+
+            <span aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+
+            <span aria-label="Behance">
+                <i class="fa-brands fa-behance"></i>
+            </span>
+        </div>
+
+        <p class="footerCopyright" id="contatti">
+            © 2026 Bloom
+        </p>
+
+    </footer>
+
+    <!-- Finestra modale -->
+
+    <div class="modale" id="modale" hidden>
+
+        <div class="contenutoModale">
+
+            <button class="chiudiModale" id="chiudiModale" type="button" aria-label="Chiudi finestra">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Richiedi un preventivo</h2>
+
+            <p>
+                Raccontaci la tua idea e parliamo insieme del tuo progetto.
+            </p>
+
+            <form id="formPreventivo">
+
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
+
+                <textarea id="messaggio" name="messaggio" placeholder="Raccontaci il tuo progetto" rows="4"
+                    required></textarea>
+
+                <button class="btnInvio" type="submit">
+                    Invia richiesta
+                </button>
+
+            </form>
+
+            <p class="messaggioConferma" id="messaggioConferma" role="status"></p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="assets/script/script.js"></script>
+
+</body>
+
+</html>
